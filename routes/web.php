@@ -18,44 +18,49 @@ use App\Http\Controllers\Auth\RegisterController;
 */
 
 Route::get('/', function () {
+    return view('/web/items');
+});
+
+
+Route::get('/web/home', function () {
+    return view('/api/items');
+});
+
+Route::get('web', function () {
     return view('/api/items');
 });
 
 Route::get('/home', function () {
-    return redirect('/api/items');
+    return view('home');
 });
 
-Route::get('/home', function () {
-    return redirect('/api/items');
-});
-
-Auth::routes();
-
-Route::get('/login', function () {
-    dd('test');
-    return redirect('/api/items');
+Route::get('/web/logout', function () {
+    return view('/welcome');
 });
 
 
-Route::get('/items/add', [ItemApiController::class, 'create'])->name('items.add');
-Route::post('/items/add',  [ItemApiController::class, 'create'])->name('items.add');
-Route::post('/items/store', [ItemApiController::class, 'store'])->name('items.store');
-Route::get('/items/edit/{id}',  [ItemApiController::class, 'edit'])->name('items.edit');
-Route::post('/items/edit/{id}',  [ItemApiController::class, 'edit'])->name('items.edit');
-Route::post('/items/update/{id}', [ItemApiController::class, 'update'])->name('items.update');
-Route::get('/items/destroy/{id}', [ItemApiController::class, 'destroy'])->name('items.destroy');
-Route::post('/items/destroy/{id}', [ItemApiController::class, 'destroy'])->name('items.destroy');
-Route::get('/items/status/{id}/{status}', [ItemApiController::class, 'status'])->name('items.status');
-Route::post('/items/status/{id}/{status}', [ItemApiController::class, 'status'])->name('items.status');
+Auth::Routes();
 
+Route::get('/items', [ItemApiController::class, 'index'])->name('items.index')->middleware('auth');
+Route::get('/items/add', [ItemApiController::class, 'create'])->name('items.add')->middleware('auth');
+Route::post('/items/add',  [ItemApiController::class, 'create'])->name('items.add')->middleware('auth');
+Route::post('/items/store', [ItemApiController::class, 'store'])->name('items.store')->middleware('auth');
+Route::get('/items/edit/{id}',  [ItemApiController::class, 'edit'])->name('items.edit')->middleware('auth');
+Route::post('/items/edit/{id}',  [ItemApiController::class, 'edit'])->name('items.edit')->middleware('auth');
+Route::post('/items/update/{id}', [ItemApiController::class, 'update'])->name('items.update')->middleware('auth');
+Route::get('/items/destroy/{id}', [ItemApiController::class, 'destroy'])->name('items.destroy')->middleware('auth');
+Route::post('/items/destroy/{id}', [ItemApiController::class, 'destroy'])->name('items.destroy')->middleware('auth');
+Route::get('/items/status/{id}/{status}', [ItemApiController::class, 'status'])->name('items.status')->middleware('auth');
+Route::post('/items/status/{id}/{status}', [ItemApiController::class, 'status'])->name('items.status')->middleware('auth');
 
-Route::get('/categories/add', [CategoryApiController::class, 'create'])->name('categories.add');
-Route::post('/categories/add',  [CategoryApiController::class, 'create'])->name('categories.add');
-Route::post('/categories/store', [CategoryApiController::class, 'store'])->name('categories.store');
-Route::get('/categories/edit/{id}',  [CategoryApiController::class, 'edit'])->name('categories.edit');
-Route::post('/categories/edit/{id}',  [CategoryApiController::class, 'edit'])->name('categories.edit');
-Route::post('/categories/update/{id}', [CategoryApiController::class, 'update'])->name('categories.update');
-Route::get('/categories/destroy/{id}', [CategoryApiController::class, 'destroy'])->name('categories.destroy');
-Route::post('/categories/destroy/{id}', [CategoryApiController::class, 'destroy'])->name('categories.destroy');
-Route::get('/categories/status/{id}/{status}', [CategoryApiController::class, 'status'])->name('categories.status');
-Route::post('/categories/status/{id}/{status}', [CategoryApiController::class, 'status'])->name('categories.status');
+Route::get('/categories', [CategoryApiController::class, 'index'])->name('categories.index')->middleware('auth');
+Route::get('/categories/add', [CategoryApiController::class, 'create'])->name('categories.add')->middleware('auth');
+Route::post('/categories/add',  [CategoryApiController::class, 'create'])->name('categories.add')->middleware('auth');
+Route::post('/categories/store', [CategoryApiController::class, 'store'])->name('categories.store')->middleware('auth');
+Route::get('/categories/edit/{id}',  [CategoryApiController::class, 'edit'])->name('categories.edit')->middleware('auth');
+Route::post('/categories/edit/{id}',  [CategoryApiController::class, 'edit'])->name('categories.edit')->middleware('auth');
+Route::post('/categories/update/{id}', [CategoryApiController::class, 'update'])->name('categories.update')->middleware('auth');
+Route::get('/categories/destroy/{id}', [CategoryApiController::class, 'destroy'])->name('categories.destroy')->middleware('auth');
+Route::post('/categories/destroy/{id}', [CategoryApiController::class, 'destroy'])->name('categories.destroy')->middleware('auth');
+Route::get('/categories/status/{id}/{status}', [CategoryApiController::class, 'status'])->name('categories.status')->middleware('auth');
+Route::post('/categories/status/{id}/{status}', [CategoryApiController::class, 'status'])->name('categories.status')->middleware('auth');

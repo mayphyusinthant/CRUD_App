@@ -5,13 +5,13 @@
     <div class = "col-2">
         <h3>Admin Panel </h3>
         <br/>
-        <div id = "label" class = "rounded p-1" onclick="window.location.href='{{ route('items.index') }}';">
+         <div id = "label" class = "rounded p-1" onclick="window.location.href='{{ route('items.index') }}';">
             <i class="bi bi-grid"></i>
-            <a href = "" src = "" > Item </a>
+            <a href = "{{ route('items.index') }}" src = "" > Item </a>
         </div><br/>
         <div id = "label" class = "rounded p-1" onclick="window.location.href='{{ route('categories.index') }}';">
             <i class="bi bi-list-task"></i>
-            <a href = "" src = "" > Category </a>
+            <a href = "{{ route('categories.index') }}" src = "" > Category </a>
         </div><br/>
 
         <a class="dropdown-item" href="{{ route('logout') }}"

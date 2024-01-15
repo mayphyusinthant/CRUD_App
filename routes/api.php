@@ -4,7 +4,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemApiController;
 use App\Http\Controllers\CategoryApiController;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,7 +19,5 @@ use App\Http\Controllers\CategoryApiController;
 //     return $request->user();
 // });
 
-Route::apiResource('/items', 'ItemApiController');
-Route::apiResource('/categories', 'CategoryApiController');
 
 
