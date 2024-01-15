@@ -67,13 +67,11 @@
                             
                         </div>
 
-                        <div class="row mb-0">
                             <div class="col-12  btn btn-info card-footer" >
                                 <button type="submit" class="btn btn-info" style = "color: white;">
                                     {{ __('Register') }}
                                 </button>
                             </div>
-                        </div>
                     </form>
                 </div>
             </div>
