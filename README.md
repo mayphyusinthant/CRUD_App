@@ -9,7 +9,7 @@
 [![Release](https://badgen.net/github/release/mayphyusinthant/attendance_mgmt_system?include_prereleases&label=Release)]([https://github.com/mayphyusinthant/attendance_mgmt_system/releases/tag](https://github.com/mayphyusinthant/attendance_mgmt_system/releases/tag/v1.0-alpha.1))<br/>
 
 # License
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](LICENSE)
 
 <br/>
 This application is a web-based application that allows uses to exchange, sell or buy products easily.
