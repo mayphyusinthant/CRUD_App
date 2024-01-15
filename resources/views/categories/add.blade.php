@@ -16,9 +16,9 @@
     </div>
 
     <div class = "col-10">
-        <p > Items List > Add Items</p>
+        <p > Items List > Add Categories</p>
         <div  class = "rounded p-1  px-3 py-2 title"> 
-                Add Items
+        Add Categories
         </div>
         <br/>
 
