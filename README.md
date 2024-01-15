@@ -13,14 +13,14 @@
 
 <br/>
 This application is a web-based application that allows uses to exchange, sell or buy products easily.
-
-Database - ERD
+<br/>
+Database - ERD <br/>
 ![image](https://github.com/mayphyusinthant/CRUD_App/assets/154217638/74b39427-0b88-45b0-930a-c50687816a76)
-
-Login Form
+<br/><br/>
+Login Form<br/>
 ![image](https://github.com/mayphyusinthant/CRUD_App/assets/154217638/cb9d6e86-b4ad-443e-b659-1ad887f144d5)
-
-Register Form
+<br/><br/>
+Register Form<br/>
 ![image](https://github.com/mayphyusinthant/CRUD_App/assets/154217638/b6f2e247-a8c1-4f0c-86b1-c527c0ef9053)
 
 
