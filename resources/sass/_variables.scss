@@ -1,0 +1,15 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$btn-primary-bg: #6F5AE5 ;
+
+// Style the custom class
+.btn-custom-primary {
+    background-color: #6F5AE5 ;
+    color: #ffffff; // Set text color to contrast with the background color
+}
