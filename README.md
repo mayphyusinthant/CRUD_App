@@ -11,8 +11,7 @@
 # License
 [![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](LICENSE)
 
-<br/>
-<h4> Overview </h4>
+<h3> Overview </h3>
 This application is a web-based application that allows uses to exchange, sell or buy products easily. <br/>
 - Categories Management <br/>
 - Items Management <br/>
