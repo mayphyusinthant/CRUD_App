@@ -12,11 +12,11 @@
 [![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](LICENSE)
 
 <br/>
-This application is a web-based application that allows uses to exchange, sell or buy products easily. <br/>
 <h4> Overview </h4>
+This application is a web-based application that allows uses to exchange, sell or buy products easily. <br/>
 - Categories Management <br/>
 - Items Management <br/>
-- Owner Management <br/> br/> 
+- Owner Management <br/> <br/> 
 
 Database - ERD 
 ![image](https://github.com/mayphyusinthant/CRUD_App/assets/154217638/74b39427-0b88-45b0-930a-c50687816a76)
